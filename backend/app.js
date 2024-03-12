@@ -10,8 +10,8 @@ dotenv.config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: ["https://portfolio-vaibhav-ulsa-9hrtq4psr-vaibhavs-projects-9a81377d.vercel.app"],
-    methods: ["GET","POST","PUT","DELETE","PATCH","OPTIONS"],
+    origin: [process.env.FRONTEND_URL],
+    methods: ["POST"],
     credentials: true,
   })
 );
