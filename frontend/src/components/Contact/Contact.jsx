@@ -16,7 +16,7 @@ const Contact = () => {
     e.preventDefault();
   try {
     const{data} = await axios.post(
-      "http://long-pink-mackerel-belt.cyclic.app/api/v1/reservation/send",
+      "https://long-pink-mackerel-belt.cyclic.app/api/v1/reservation/send",
       {firstName, email, information},
       {
         headers:{
